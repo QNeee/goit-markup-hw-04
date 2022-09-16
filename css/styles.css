@@ -407,14 +407,16 @@ ul {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
+  height: 1360px;
 }
 
 .projects .lst:not(:last-child) {
   margin-right: 30px;
 }
 .projects .lst {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
+
 .projects .lst:nth-child(3n + 3) {
   margin-right: 0px;
 }
@@ -423,6 +425,12 @@ ul {
   border-top: transparent;
   padding: 20px 24px;
 }
+.projects .lst:hover,
+.projects .lst:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 .group1 {
   font-family: 'Roboto';
   font-style: normal;

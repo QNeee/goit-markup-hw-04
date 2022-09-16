@@ -19,6 +19,7 @@
   </head>
   <body>
     <!--header-->
+    <!--header-->
     <header class="header">
       <div class="container nav-flex">
         <nav class="header-nav nav-flex">
@@ -33,11 +34,19 @@
         </nav>
         <ul class="list">
           <li class="lst contact-item">
-            <a href="mailto:info@devstudio.com" class="link link-list">info@devstudio.com</a>
+            <a class="link link-list" href="mailto:info@devstudio.com"
+              ><svg class="contact-icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use></svg
+              >info@devstudio.com</a
+            >
           </li>
 
-          <li class="lst contact-item">
-            <a href="tel:+380961111111" class="link link-list">+38 096 111 11 11</a>
+          <li class="lst contact-item contact-item1">
+            <a class="link link-list" href="tel:+380961111111"
+              ><svg class="contact-icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-mobile"></use></svg
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
@@ -60,7 +69,7 @@
           <ul class="projects">
             <!--project 1 -->
             <li class="lst">
-              <img src="images/portfolio1.jpg" alt="man" width="370" />
+              <img src="images/portfolio1.jpg" alt="man" width="370" height="294" />
               <div class="projects-border">
                 <h2 class="group1">Технокряк</h2>
                 <p class="title">Веб-сайт</p>
@@ -68,7 +77,7 @@
             </li>
             <!--project 2 -->
             <li class="lst">
-              <img src="images/portfolio2.jpg" alt="man" width="370" />
+              <img src="images/portfolio2.jpg" alt="man" width="370" height="294" />
               <div class="projects-border">
                 <h2 class="group1">Постер New Orlean vs Golden Star</h2>
                 <p class="title">Дизайн</p>
@@ -76,7 +85,7 @@
             </li>
             <!--project 3 -->
             <li class="lst">
-              <img src="images/portfolio3.jpg" alt="man" width="370" />
+              <img src="images/portfolio3.jpg" alt="man" width="370" height="294" />
               <div class="projects-border">
                 <h2 class="group1">Ресторан Seafood</h2>
                 <p class="title">Додаток</p>
@@ -84,7 +93,7 @@
             </li>
             <!--project 4 -->
             <li class="lst">
-              <img src="images/portfolio4.jpg" alt="man" width="370" />
+              <img src="images/portfolio4.jpg" alt="man" width="370" height="294" />
               <div class="projects-border">
                 <h2 class="group1">Проєкт Prime</h2>
                 <p class="title">Маркетинг</p>
@@ -92,7 +101,7 @@
             </li>
             <!--project 5 -->
             <li class="lst">
-              <img src="images/portfolio5.jpg" alt="man" width="370" />
+              <img src="images/portfolio5.jpg" alt="man" width="370" height="294" />
               <div class="projects-border">
                 <h2 class="group1">Проєкт Boxes</h2>
                 <p class="title">Додаток</p>
@@ -100,7 +109,7 @@
             </li>
             <!--project 6 -->
             <li class="lst">
-              <img src="images/portfolio6.jpg" alt="man" width="370" />
+              <img src="images/portfolio6.jpg" alt="man" width="370" height="294" />
               <div class="projects-border">
                 <h2 class="group1">Inspiration has no Borders</h2>
                 <p class="title">Веб-сайт</p>
@@ -108,7 +117,7 @@
             </li>
             <!--project 7 -->
             <li class="lst">
-              <img src="images/portfolio7.jpg" alt="man" width="370" />
+              <img src="images/portfolio7.jpg" alt="man" width="370" height="294" />
               <div class="projects-border">
                 <h2 class="group1">Видання Limited Edition</h2>
                 <p class="title">Дизайн</p>
@@ -116,7 +125,7 @@
             </li>
             <!--project 8 -->
             <li class="lst">
-              <img src="images/portfolio8.jpg" alt="man" width="370" />
+              <img src="images/portfolio8.jpg" alt="man" width="370" height="294" />
               <div class="projects-border">
                 <h2 class="group1">Проєкт LAB</h2>
                 <p class="title">Маркетинг</p>
@@ -124,7 +133,7 @@
             </li>
             <!--project 9 -->
             <li class="lst">
-              <img src="images/portfolio9.jpg" alt="man" width="370" />
+              <img src="images/portfolio9.jpg" alt="man" width="370" height="294" />
               <div class="projects-border">
                 <h2 class="group1">Growing Business</h2>
                 <p class="title">Додаток</p>
@@ -137,26 +146,65 @@
     <!--footer-->
     <footer class="footer">
       <div class="container">
-        <a href="index.html" class="logo logo-white"><span class="logo-web">Web</span>Studio</a>
-        <address class="footer-adress">
-          <ul class="adress-list">
-            <li class="lst">
-              <a
-                href="https://www.google.com.ua/maps/@50.4851493,30.4721233,14z?hl=ru"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="adress-link link1"
-                >м. Київ, пр-т Лесі Українки, 26</a
-              >
-            </li>
-            <li class="lst">
-              <a href="mailto:info@devstudio.com" class="adress-link link">info@devstudio.com</a>
-            </li>
-            <li class="lst">
-              <a href="tel:+380961111111" class="adress-link link">+38 096 111 11 11</a>
-            </li>
-          </ul>
-        </address>
+        <div class="footer-flex">
+          <div class="contacts-flex">
+            <a href="index.html" class="logo logo-white"><span class="logo-web">Web</span>Studio</a>
+            <address class="footer-adress">
+              <ul class="adress-list">
+                <li class="lst">
+                  <a
+                    href="https://www.google.com.ua/maps/@50.4851493,30.4721233,14z?hl=ru"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="adress-link link1"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="lst">
+                  <a href="mailto:info@devstudio.com" class="adress-link link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="lst">
+                  <a href="tel:+380961111111" class="adress-link link">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="social-flex">
+            <p class="social-text">Приєднуйтесь</p>
+            <ul class="footer-icons">
+              <li class="team-bcg footer-bcg">
+                <a class="social-link footer-link" href="">
+                  <svg class="team-icon footer-icon">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-bcg footer-bcg">
+                <a class="social-link footer-link" href="">
+                  <svg class="team-icon">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-bcg footer-bcg">
+                <a class="social-link footer-link" href="">
+                  <svg class="team-icon">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-bcg footer-bcg">
+                <a class="social-link footer-link" href="">
+                  <svg class="team-icon footer-icon">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
