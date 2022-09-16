@@ -137,15 +137,18 @@ ul {
 /* index */
 /* hero */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
   max-width: 1600px;
   min-height: 600px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-image: url('../images/Шапка.jpg');
+  background-image: url(../images/cap.jpg);
+  background-color: var(--hero-bcg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 
   text-align: center;
 }
@@ -155,12 +158,9 @@ ul {
   margin-right: auto;
   max-width: 696px;
 
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.4;
-
+  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
@@ -172,14 +172,15 @@ ul {
   border-radius: 4px;
   border: 1px solid transparent;
   padding: 10px 32px;
-  align-items: center;
 
-  font-family: 'Roboto';
-  font-style: normal;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
+  align-items: center;
+  text-align: center;
   letter-spacing: 0.06em;
+  cursor: pointer;
 
   background-color: var(--accent-color);
   color: var(--filter-secondarycolor);
@@ -326,7 +327,39 @@ ul {
   letter-spacing: 0.03em;
   color: var(--secondary-text);
 }
+.client-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.client-lst {
+  width: 170px;
+  height: 90px;
+}
+.client-link {
+  width: 170px;
+  height: 90px;
+  display: block;
+  border: 1px solid #afb1b8;
+  color: #afb1b8;
+  background-color: #fff;
+  padding: 16px 32px;
+}
+.client-lst:not(:last-child) {
+  margin-right: 30px;
+}
+.clients-icon {
+  fill: currentColor;
+}
+.client-link:hover,
+.client-link:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
 /* portfolio */
 /* btns */
 .btns {
@@ -407,20 +440,25 @@ ul {
   color: var(--secondary-text);
 }
 /* footer */
-.footer-icon {
-  fill: currentColor;
-}
+
 .footer {
+  height: 252px;
   padding-top: 60px;
   padding-bottom: 60px;
 
   background-color: var(--footer-bcg);
 }
-.footer-social {
-  margin-left: 70px;
-  width: 206px;
+.footer-flex {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-.footer-list {
+.social-flex {
+  height: 80px;
+  margin-left: 70px;
+}
+.footer-icons {
   display: flex;
   padding: 0;
   margin-top: 0;
@@ -428,7 +466,12 @@ ul {
   justify-content: space-between;
   align-items: center;
 }
+.footer-link {
+  color: #ffffff;
+  background-color: #ffffff10;
+}
 .social-text {
+  padding: 20px 0px 10px 0px;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
