@@ -402,13 +402,14 @@ ul {
 
 /* projects */
 .projects {
-  display: block;
   align-items: center;
   display: flex;
   flex-wrap: wrap;
   height: 1360px;
 }
-
+.projects img {
+  display: block;
+}
 .projects .lst:not(:last-child) {
   margin-right: 30px;
 }
